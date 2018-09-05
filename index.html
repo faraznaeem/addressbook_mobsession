@@ -11,10 +11,26 @@
 <body class>
     <h1>Contacts</h1>
     <button class="add-contact">Add Contact</button>
+    <form class="new-contact-form" action="#">
+        <label for="name">Name</label>
+        <input name="name" id="contact-name" type="text">
+        <label for="email">Email</label>
+        <input name="email" id="contact-email" type="email">
+        <label for="phone">Phone</label>
+        <input name="phone" id="contact-phone" type="text">
+        <label for="company">Company</label>
+        <input name="company" id="contact-company" type="text">
+        <label for="notes">Notes</label>
+        <textarea name="notes" id="contact-notes" cols="10" rows="5"></textarea>
+        <label for="twitter">Twitter</label>
+        <input name="twitter" id="contact-twitter" type="text">
+        <input class="save-contact" type="submit" value="Save contact">
+    </form>
     <script src="./dist/bundle.js"></script>
-    <div>
-        <p>You have no contacts in your address book </p>
+    <div class="contact-list">
+    
     </div>
+
 </body>
 
 </html>
